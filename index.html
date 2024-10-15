@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>European Interest Group on ANARI (EU-IGA)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="main.js"></script>
+    <script>
+        function setupPage() {
+            var pageid = queryGET("pageid");
+            if (!pageid)
+                pageid = "home";
+
+            document.getElementById(pageid + "main").style.display = "block"
+
+            // if (!isMobileBrowser())
+            // {
+            //     document.getElementById("mob_" + pageid).className = "active";
+            //     document.getElementById("topnavdesktop").style.display = "none";
+            //     document.getElementById("footer").style.width = "480px";
+            // }
+            // else
+            // {
+            //     document.getElementById(pageid).className = "active";
+            //     document.getElementById("topnavmobile").style.display = "none";
+            // }
+            document.getElementById(pageid).className = "active";
+            // document.getElementById("topnavmobile").style.display = "none";
+
+            if (pageid === 'home') {
+                document.getElementById('gdrive0').src = "https://drive.google.com/file/d/1YaisJcvVhyisgyJhBZQXiMORYxXdhXNx/preview";
+            }
+        }
+
+    </script>
+</head>
+
+<body onload="setupPage()">
+
+    <!--<div class="mobile-container">-->
+
+    <!-- desktop navigation -->
+    <div class="topnav" id="topnavdesktop" style="display: block">
+        <a href="index.html?pageid=home" id="home">Home</a>
+        <a href="index.html?pageid=part" id="part">Partners</a>
+        <a href="index.html?pageid=soft" id="soft">Software</a>
+        <a href="index.html?pageid=publ" id="publ">Publications</a>
+    </div>
+
+    <!-- mobile navigation -->
+    <!--div class="topnav" id="topnavmobile" style="display: block"-->
+    <!-- Navigation links (hidden by default) -->
+    <!--a href="index.html?pageid=home" id="mob_home" class="active">Home</a>
+    <div id="menulinks">
+        <a href="index.html?pageid=home" id="mob_home">Home</a>
+        <a href="index.html?pageid=publ" id="mob_publ">Publications</a>
+        <a href="index.html?pageid=code" id="mob_publ">Sample Codes</a>
+        <a href="index.html?pageid=vis_" id="mob_publ">Visualizations</a>
+        <a href="index.html?pageid=cont" id="mob_cont">Contact &amp; Funding</a>
+    </div-->
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <!--a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div-->
+
+    <!-- sidebar -->
+    <div class="sidebar">
+        <div class="profilename">
+            European Interest Group on ANARI<br />(EU-IGA)
+        </div>
+    
+        <div class="profiledescr">
+            A European Initiative of academics and industry partners
+            to aid in the standardization of 3D rendering in computer
+            graphics and scientific visualization, by use of the open
+            standard
+            <a href="https://www.khronos.org/anari/">ANARI</a>.
+        </div>
+        <br />
+        <img src="img/anarilogo.png" class="profilepic" />
+    </div>
+
+    <!-- main area -->
+    <div class="mainarea" id="homemain">
+        <div class="title3">Standardized Rendering with ANARI</div>
+        <table>
+            <tr>
+                <td style="width: 400px">
+                    <img src="img/paraview.png" class="pic" />
+                </td>
+                <td style="width: 400px">
+                    <img src="img/ovito.jpg" class="pic" />
+                </td>
+            </tr><tr>
+                <td style="vertical-align: top">ANARI in ParaView
+                (<a href="https://www.paraview.org">https://www.paraview.org</a>).</td>
+                <td style="vertical-align: top">OVITO Pro uses ANARI via VisRTX
+                (<a href="https://ovito.org">https://ovito.org</a>).</td>
+            </tr><tr>
+                <td style="width: 400px">
+                    <iframe id="gdrive0" width="400" height="300" allow="autoplay"></iframe>
+                </td>
+                <td></td>
+            </tr><tr>
+                <td style="vertical-align: top">ANARI in the CAVE VR environment in Cologne.
+                </td>
+                <td></td>
+            </tr>
+        </table>
+        <br />
+        <br />
+        <div class="title3">Project Mission</div>
+        EU-IGA is a (for now loosely) coordinated initiative of partners
+        primarily from the EU who seek to have an influence on the
+        standardization of 3D rendering in computer graphics and scientific
+        visualization. The interest group promotes Khronos' open standard ANARI
+        (<a href="https://www.khronos.org/anari">https://www.khronos.org/anari</a>),
+        which provides a common API for renderers and visualization apps to
+        interface with. As the Khronos working group is primarily driven by
+        industry players from the US; EU-IGA is a European initiative whose
+        mission is to represent the interests of academics and industry
+        partners from the EU in this open standard.  EU-IGA closely
+        collaborates with the Khronos ANARI working group members.
+        <br />
+        <br />
+        <br />
+        <br />
+    </div>
+
+    <div class="mainarea" id="partmain">
+        <img src="img/de.png" class="flag" />
+        <div>
+            <ul>
+                <li>
+                    University of Cologne, Parallel and Distributed Systems<br />
+                    Website: <a href="https://pds.uni-koeln.de">https://pds.uni-koeln.de</a><br />
+                    Contact: Stefan Zellmann (<a href="javascript:window.location.href = 'mailto:' + ['zellmann','uni-koeln.de'].join('@')">send mail</a>)<br />
+                </li>
+                <br />
+                <li>
+                    OVITO GmbH<br />
+                    Website: <a href="https://ovito.org">https://ovito.org</a><br />
+                    Contact: Dr. Alexander Stukowski, Dr. Constanze Kalcher (<a href="javascript:window.location.href = 'mailto:' + ['mail','ovito.org'].join('@')">send mail</a>)<br />
+                </li>
+                <br />
+                <li>
+                    Systemberatung Schwarzer<br />
+                    Website: <a href="https://schwarzers.com">https://schwarzers.com</a><br />
+                    Contact: Jesko Schwarzer (<a href="javascript:window.location.href = 'mailto:' + ['anari','schwarzers.com'].join('@')">send mail</a>)<br />
+                </li>
+            </ul>
+        </div>
+        <br />
+        <img src="img/fr.png" class="flag" />
+        <div>
+            <ul>
+                <li>
+                    Kitware France<br />
+                    Website: <a href="https://kitware.fr">https://kitware.fr</a><br />
+                    Contact: Francois Mazen (<a href="javascript:window.location.href = 'mailto:' + ['kitware','kitware.fr'].join('@')">send mail</a>)<br />
+                </li>
+                <br />
+                <li>
+                    United-VR<br />
+                    Website: <a href="https://united-vr.com">https://united-vr.com</a><br />
+                    Contact: Philippe Porral, Welcome Alexandre-Barff (<a href="javascript:window.location.href = 'mailto:' + ['contact','united-vr.com'].join('@')">send mail</a>)<br />
+                </li>
+                <br />
+                <li>
+                    University of Strasbourg, ICube Lab<br />
+                    Website: <a href="https://icube.unistra.fr">https://icube.unistra.fr</a><br />
+                    Contact: Jonathan Sarton (<a href="javascript:window.location.href = 'mailto:' + ['sarton','unistra.fr'].join('@')">send mail</a>)<br />
+                </li>
+                <br />
+                <li>
+                    University of Reims Champagne-Ardenne, CReSTIC<br />
+                    Website: <a href="https://crestic.univ-reims.fr">https://crestic.univ-reims.fr</a><br />
+                    Contact: Laurent Lucas (<a href="javascript:window.location.href = 'mailto:' + ['lareunt.lucas','univ-reims.fr'].join('@')">send mail</a>)<br />
+                </li>
+        </div>
+        <br />
+        <img src="img/cz.png" class="flag" />
+        <div>
+            <ul>
+                <li>
+                    University of Ostrava, IT4Innovation (IT4I)<br />
+                    Website: <a href="https://it4i.cz">https://it4i.cz</a><br />
+                    Contact: Petr Strakos (<a href="javascript:window.location.href = 'mailto:' + ['petr.strakos','vsb.cz'].join('@')">send mail</a>)<br />
+                </li>
+            </ul>
+        </div>
+        <br />
+        <img src="img/us.png" class="flag" />
+        <div>
+            <ul>
+                <li>
+                    Oakridge National Laboratory (US, Associated Partner)<br />
+                    Website: <a href="https://www.ornl.gov">https://www.ornl.gov</a><br />
+                    Contact: Ken Moreland (<a href="javascript:window.location.href = 'mailto:' + ['morelandkd','orln.gov'].join('@')">send mail</a>)<br />
+                </li>
+            </ul>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+    </div>
+
+    <div class="mainarea" id="softmain">
+
+    </div>
+
+    <div class="mainarea" id="publmain">
+
+    </div>
+
+    <div class="footer" id="footer">
+        EU-IGA (2024)
+    </div>
+
+    <!--</div>  mobile container -->
+
+</body>
+
+</html>
